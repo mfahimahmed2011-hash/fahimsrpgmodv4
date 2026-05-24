@@ -3,6 +3,7 @@ package net.fahim.fahimsrpgmod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
 import net.fahim.fahimsrpgmod.block.custom.MagicBlock;
+import net.fahim.fahimsrpgmod.block.custom.PinkGarnetLampBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -23,13 +24,13 @@ public class ModBlocks {
                               .requiresTool()));
 
 
-             public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-                   new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
-              public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
-                      new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
-                              AbstractBlock.Settings.create().strength(3f).requiresTool()));  public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
-                      new ExperienceDroppingBlock(UniformIntProvider.create(3,6),
-                              AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+      public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+          new MagicBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+      public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
+           new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
+            AbstractBlock.Settings.create().strength(3f).requiresTool()));  public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
+           new ExperienceDroppingBlock(UniformIntProvider.create(3,6),
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
      public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
                                       new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
@@ -45,7 +46,7 @@ public class ModBlocks {
         public static final Block PINK_GARNET_FENCE = registerBlock("pink_garnet_fence",
            new FenceBlock (AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
         public static final Block PINK_GARNET_FENCE_GATE = registerBlock("pink_garnet_fence_gate",
-           new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+           new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2.5f).requiresTool().nonOpaque()));
         public static final Block PINK_GARNET_WALL = registerBlock("pink_garnet_wall",
            new WallBlock(AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
 
@@ -53,6 +54,10 @@ public class ModBlocks {
            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2.5f).requiresTool().nonOpaque()));
         public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor",
            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2.5f).requiresTool()));
+
+        public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
+                new PinkGarnetLampBlock(AbstractBlock.Settings.create()
+                        .strength(1f).requiresTool().luminance(state-> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 0)));
 
 
 

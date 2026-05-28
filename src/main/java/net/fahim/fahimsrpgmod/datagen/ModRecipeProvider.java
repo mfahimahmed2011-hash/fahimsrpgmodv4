@@ -12,6 +12,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
+import net.minecraft.item.Items;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -48,6 +49,63 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.MAGIC_BLOCK)
                 .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
                 .offerTo(exporter, Identifier.of(FahimsRPGMod.MOD_ID, "raw_pink_garnet_from_magic_block"));
+
+        // Sword
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SWORD)
+                .pattern("P")
+                .pattern("P")
+                .pattern("S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET),
+                        conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        // Pickaxe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE)
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET),
+                        conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+        // Axe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE)
+                .pattern("PP")
+                .pattern("PS")
+                .pattern(" S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET),
+                        conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+
+        // Shovel
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL)
+                .pattern("P")
+                .pattern("S")
+                .pattern("S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET),
+                        conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
+
+
+        // Hoe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE)
+                .pattern("PP")
+                .pattern(" S")
+                .pattern(" S")
+                .input('P', ModItems.PINK_GARNET)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET),
+                        conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(exporter);
 
 
     }

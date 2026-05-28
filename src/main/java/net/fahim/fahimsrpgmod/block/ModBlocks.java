@@ -27,10 +27,10 @@ public class ModBlocks {
       public static final Block MAGIC_BLOCK = registerBlock("magic_block",
           new MagicBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
       public static final Block PINK_GARNET_DEEPSLATE_ORE = registerBlock("pink_garnet_deepslate_ore",
-           new ExperienceDroppingBlock(UniformIntProvider.create(2,5),AbstractBlock.Settings.create().strength(3f).requiresTool().luminance(state->7)));
+           new ExperienceDroppingBlock(UniformIntProvider.create(2,5),AbstractBlock.Settings.create().strength(3f).requiresTool()));
       public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
            new ExperienceDroppingBlock(UniformIntProvider.create(3,6),
-            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(state->5)));
+            AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
      public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
                                       new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),

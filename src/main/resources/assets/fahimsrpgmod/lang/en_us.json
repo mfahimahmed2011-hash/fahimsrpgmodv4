@@ -5,6 +5,13 @@
   "item.fahimsrpgmod.cauliflower": "Cauliflower",
   "item.fahimsrpgmod.starlight_ashes": "Starlight Ashes",
 
+  "item.fahimsrpgmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.fahimsrpgmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.fahimsrpgmod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.fahimsrpgmod.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.fahimsrpgmod.pink_garnet_axe": "Pink Garnet Axe",
+
+
   "block.fahimsrpgmod.pink_garnet_block": "Block of Pink Garnet",
   "block.fahimsrpgmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
@@ -33,7 +40,7 @@
 
   "tooltip.fahimsrpgmod.magic_block.tooltip": "This block is very §9saim§r",
 
-  "tooltip.fahimsrpgmod.chisel.shift_down": "This chisel chisels items into bricks like saim did to saim",
+  "tooltip.fahimsrpgmod.chisel.shift_down": "This chisel chisels items into Blocks and can change them",
   "tooltip.fahimsrpgmod.chisel": "Press §eShift§r for more Information!!! ",
-  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like saims sweat"
+  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like vegetables"
 }

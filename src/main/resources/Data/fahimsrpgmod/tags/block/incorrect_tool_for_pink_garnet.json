@@ -1,0 +1,9 @@
+{
+"values": [
+        "#minecraft:incorrect_tool_for_iron_tool"
+],
+
+"remove": [
+        "#fahimsrpgmod:needs_pink_garnet_tool"
+]
+}

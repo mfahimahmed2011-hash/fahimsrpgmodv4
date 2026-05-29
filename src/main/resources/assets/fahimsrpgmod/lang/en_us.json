@@ -11,6 +11,8 @@
   "item.fahimsrpgmod.pink_garnet_hoe": "Pink Garnet Hoe",
   "item.fahimsrpgmod.pink_garnet_axe": "Pink Garnet Axe",
 
+  "item.fahimsrpgmod.pink_garnet_hammer": "Pink Garnet Hammer",
+
 
   "block.fahimsrpgmod.pink_garnet_block": "Block of Pink Garnet",
   "block.fahimsrpgmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
@@ -42,5 +44,5 @@
 
   "tooltip.fahimsrpgmod.chisel.shift_down": "This chisel chisels items into Blocks and can change them",
   "tooltip.fahimsrpgmod.chisel": "Press §eShift§r for more Information!!! ",
-  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like vegetables"
+  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like sameer bin shahadat from darul uloom"
 }

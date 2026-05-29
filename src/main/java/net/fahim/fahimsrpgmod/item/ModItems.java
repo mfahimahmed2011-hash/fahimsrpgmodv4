@@ -2,6 +2,7 @@ package net.fahim.fahimsrpgmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fahim.fahimsrpgmod.FahimsRPGMod;
+import net.fahim.fahimsrpgmod.block.custom.HammerItem;
 import net.fahim.fahimsrpgmod.item.custom.ChiselItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -48,6 +49,11 @@ public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
     public static final Item PINK_GARNET_HOE = registerItem("pink_garnet_hoe",
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,0,-3.0f))));
+
+
+    public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
+            new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET,3,-1.00f))));
 
 
 private static Item registerItem(String name, Item item) {

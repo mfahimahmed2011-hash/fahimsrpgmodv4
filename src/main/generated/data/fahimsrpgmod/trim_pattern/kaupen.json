@@ -1,0 +1,8 @@
+{
+  "asset_id": "fahimsrpgmod:kaupen",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.fahimsrpgmod.kaupen"
+  },
+  "template_item": "fahimsrpgmod:kaupen_armor_trim_smithing_template"
+}

@@ -20,6 +20,8 @@
 
   "item.fahimsrpgmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
 
+  "item.fahimsrpgmod.kaupen_armor_trim_smithing_template": "Kaupen Smithing Template",
+
 
 
   "block.fahimsrpgmod.pink_garnet_block": "Block of Pink Garnet",
@@ -52,5 +54,8 @@
 
   "tooltip.fahimsrpgmod.chisel.shift_down": "This chisel chisels items into Blocks and can change them",
   "tooltip.fahimsrpgmod.chisel": "Press §eShift§r for more Information!!! ",
-  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like sameer bin shahadat from darul uloom"
+  "tooltip.fahimsrpgmod.cauliflower.tooltip": "This tastes like Cauliflower!!!",
+
+  "trim_material.fahimsrpgmod.pink_garnet": "Pink Garnet Material",
+  "trim_patter.fahimsrpgmod.kaupen": "Kaupen Armor Patter"
 }

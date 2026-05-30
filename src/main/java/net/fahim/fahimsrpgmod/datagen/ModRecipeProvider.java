@@ -108,5 +108,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
+
+        offerSmithingTrimRecipe(exporter, ModItems.KAUPEN_SMITHING_TEMPLATE, Identifier.of(FahimsRPGMod.MOD_ID,"kaupen"));
+
+
     }
 }
